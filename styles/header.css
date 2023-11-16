@@ -1,0 +1,113 @@
+nav.nav-desk{
+  display: none;
+}
+header {
+  width: 100%;
+  position: fixed;
+  background-color: var(--primary-color);
+  z-index: 30;
+ 
+}
+header .container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  height: 80px;
+}
+header img {
+  width: 70px;
+  height: 70px;
+  margin-left: 24px;
+}
+
+.icon-button-header img {
+  width: 20px;
+  height: 20px;
+  margin-right: 24px;
+}
+.container-logo {
+  width: 120px;
+  height: 120px;
+  margin-left: -5%;
+}
+.nav-mobile {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  display: none;
+}
+.nav-mobile p {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color: var(--primary-color);
+  font-size: 25px;
+  font-weight: 800;
+}
+.nav-mobile nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 40px;
+  margin-top: 70px;
+}
+.nav-mobile nav a {
+  text-decoration: none;
+  color:var(--primary-color);
+  font-weight: 800;
+  position: relative;
+}
+.nav-mobile nav a::after {
+  content: "";
+  width: 10%;
+  height: 1px;
+  position: absolute;
+  left: 42%;
+  bottom: -2px;
+  background-color:var( --color-icons);
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.4s;
+}
+.nav-mobile nav a:hover::after {
+  transform: scale(1);
+  transition: transform 0.4s;
+  transform-origin: left;
+}
+.container-logo img {
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+}
+.whatsapp-desktop {
+  display: none;
+}
+.container-whats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 10%;
+  margin-left: -7%;
+  left: 90%;
+  z-index: 40;
+  border-radius: 50%;
+  -webkit-box-shadow: -6px 9px 44px -3px var(--primary-color);
+  box-shadow: -6px 9px 44px -3px var(--primary-color);
+}
+.whatsapp {
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(2%, 5%);
+}
+.nav,
+.whatsapp-desktop {
+  display: none;
+}

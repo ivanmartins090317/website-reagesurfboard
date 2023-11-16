@@ -1,0 +1,29 @@
+.container-hero img {
+  width: 100%;
+  height:auto;
+  object-fit: cover;
+  margin-top: 100px;
+  position: relative;
+}
+  .text-hero {
+  position: absolute;
+  width: 310px;
+  top:  200px;
+  z-index: 10;
+}
+
+.text-hero h3,
+p {
+  margin-left: 24px;
+  line-height:40px;
+}
+.text-hero h3 {
+  font-size: 38px;
+  font-weight: 800;
+  color: var( --color-icons);
+}
+.text-hero p {
+  font-size: 16px;
+  font-weight: 700;
+  color: var( --color-icons);
+}

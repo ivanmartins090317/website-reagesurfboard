@@ -1,0 +1,72 @@
+.container-footer{
+  width:100%;
+  height:auto;
+  background-color: #232323;
+  color:#FFFFFF;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-top: -%;
+}
+.container-footer .imagem-logo-footer{
+  width:120px;
+  height:120px;
+  margin:0 auto;
+}
+.container-footer .imagem-logo-footer img{
+  width:100%;
+}
+.container-footer .contatos-footer{
+  height:150px;
+  display:flex;
+  flex-direction:column;
+  margin-top:60px;
+  align-items:center;
+}
+.container-footer .contatos-footer h3{
+  font-size:25px;
+  font-weight:700;
+  color:#00D7FF;
+  margin-bottom:35px;
+}
+.container-footer .contatos-footer p{
+  font-size:25px;
+  font-weight:400;
+  margin-right:13px;
+  text-align:center;
+}
+.container-footer h3{
+  font-size:25px;
+  font-weight:700;
+  color:#00D7FF;
+  margin-bottom:25px;
+}
+.container-footer .nav-footer{
+  margin:25px 0;
+  height:150px;
+  text-align:center;
+}
+.container-footer .nav-footer a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  color:#FFFFFF;
+  margin:10px 0;
+}
+.container-footer .link-instagram{
+  width:100%;
+  text-decoration:none;
+  color:#FFFFFF;
+  margin:65px auto;
+}
+.container-footer .icon-footer img{
+ margin-top:65px;
+
+}
+.icon-retun-to-top p{
+ writing-mode: vertical-rl;
+ text-orientation: upright;
+ font-size:6px;
+ margin:0 auto;
+}
