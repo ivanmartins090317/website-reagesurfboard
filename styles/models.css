@@ -33,6 +33,7 @@
   margin: 10px auto 50px ;
   position: relative;
   background-color: #eeeeee;
+  overflowX:hidden;
 }
 
 .container-models .container-logo-surfboard {
