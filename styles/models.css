@@ -6,7 +6,7 @@
   width: 170%;
   margin:5% 1% 5% ;
   position: relative;
-  overflow:hidden;
+  overflow-x:hidden;
 }
 
 .container-models .container-logo-surfboard {
