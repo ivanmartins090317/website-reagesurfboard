@@ -40,7 +40,7 @@ html {
     inset:0;
     object-fit: cover;
     background: url(../image/background.svg) no-repeat center center/ cover;  
-    overflowX: hidden;
+    overflow-x: hidden;
 }
 
 body {
