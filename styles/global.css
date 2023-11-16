@@ -28,6 +28,9 @@
   background-color: #00d7ff;
   text-transform: uppercase;
 }
+body{
+  overflowX: hidden;
+}
 body,
 html {
   font-family: "Open Sans", sans-serf;

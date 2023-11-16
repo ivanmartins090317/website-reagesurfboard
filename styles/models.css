@@ -92,7 +92,7 @@
 }
 .container-models .information h3 {
   font-size: 25px;
-  color: #232323;
+  color:var(--text-color);
   font-weight: 700;
   margin-bottom: 25px;
 }
@@ -146,8 +146,7 @@
 }
 
 .container-models .information .button-info:hover {
-  background-color: transparent;
-  color:var(--color-icons);
+  color:var(--text-color);
   transition: all 0.2s ease-in-out;
 }
 .container-models.active .information{
