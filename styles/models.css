@@ -4,9 +4,9 @@
   gap: -11px;
   align-items: center;
   width: 170%;
-  margin:5% 1% 5% ;
+  margin:5% 1% 5%;
   position: relative;
-  overflow-x:hidden;
+  overflow:hidden;
 }
 
 .container-models .container-logo-surfboard {
@@ -33,6 +33,7 @@
   margin: 10px auto 50px ;
   position: relative;
   background-color: #eeeeee;
+  overflow:hidden;
 }
 
 .container-models .container-logo-surfboard {
