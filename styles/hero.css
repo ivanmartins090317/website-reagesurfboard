@@ -5,25 +5,35 @@
   margin-top: 100px;
   position: relative;
 }
+
   .text-hero {
   position: absolute;
   width: 310px;
   top:  200px;
   z-index: 10;
 }
-
+.text-hero::before{
+  content: "";
+  width:inherit;
+  height:inherit;
+  position:fixed;
+  inset:0;
+  background: linear-gradient(54deg, rgba(18,14,14,0.6) 69%, rgba(35,35,35,0.1602766106442577) 0%);
+  z-index:-1
+}
 .text-hero h3,
 p {
   margin-left: 24px;
   line-height:40px;
 }
 .text-hero h3 {
-  font-size: 38px;
+  font-size: 32px;
   font-weight: 800;
   color: var( --color-icons);
 }
 .text-hero p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   color: var( --color-icons);
 }
+
