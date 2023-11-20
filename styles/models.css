@@ -6,12 +6,11 @@
   width: 420%;
   margin:5% 1% 5%;
   position: relative;
-  overflow:hidden;{
   overflow: auto;
   display: flex;
   scroll-snap-type: x mandatory;
 }
-}
+
 .items{
   display:flex;
   gap:20px;
@@ -132,8 +131,7 @@
   color: #7c7474;
   font-weight: 700;
   margin: 0 auto;
-  padding: 1px;
-  overflow: hidden;
+
 }
 .container-models .information .description p {
   padding: 0 15px;
@@ -153,16 +151,6 @@
   color:var(--text-color);
   font-weight:800;
 }
-/* .information .description p::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  margin-left: -14px;
-  /* background: linear-gradient(transparent, #333333); */
-  z-index: 1;
-} */
 
 /* .container-models .information .button-info {
   width: 70%;
