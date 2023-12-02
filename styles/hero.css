@@ -6,28 +6,20 @@
   position: relative;
 }
 
-  .text-hero {
+.text-hero {
   position: absolute;
   width: 310px;
-  top:  200px;
+  top:  220px;
   z-index: 10;
 }
-.text-hero::before{
-  content: "";
-  width:inherit;
-  height:inherit;
-  position:fixed;
-  inset:0;
-  background: linear-gradient(54deg, rgba(18,14,14,0.6) 69%, rgba(35,35,35,0.1602766106442577) 0%);
-  z-index:-1
-}
+
 .text-hero h3,
 p {
   margin-left: 24px;
-  line-height:40px;
+  line-height:33px;
 }
 .text-hero h3 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 800;
   color: var( --color-icons);
 }
@@ -36,4 +28,5 @@ p {
   font-weight: 700;
   color: var( --color-icons);
 }
+
 

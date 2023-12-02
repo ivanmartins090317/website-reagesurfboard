@@ -76,26 +76,47 @@ const effectTransition = (element, marginLeft) => {
   models01.style.marginLeft = marginLeft;
   element.style.transition = "0.7s";
 };
+let counterCard = 0;
+const firstCardModels = document.querySelector(".items .s1");
+
+const limitOfContainer = () =>{
+    counterCard > 300 || counterCard === -300
+      ? (counterCard = 0)
+      : (firstCardModels.style.marginLeft = `-${counterCard}%`);
+}
 
 containerModels.addEventListener("click", (event) => {
   const elementClicked = event.target.classList[0];
   const isElementClickedOne = ["nextmodel", "container-models"];
   const isElementClickedTwo = ["nextmodelTwo", "img02"];
 
-  const isOkOne = isElementClickedOne.some(
-    (element) => element === elementClicked
-  );
-  const isOkTwo = isElementClickedTwo.some(
-    (element) => element === elementClicked
-  );
-  if (isOkOne) {
-    effectTransition(models02, "-16%");
-    return;
+  if (elementClicked === "nextmodel") {
+    counterCard += 75;
+    limitOfContainer()
+    return counterCard
   }
-  if (isOkTwo) {
-    effectTransition(models01, "3%");
+  if (elementClicked === "previosmodel") {
+    counterCard -= 75;
+    limitOfContainer()
+    return counterCard
   }
+
 });
+
+
+// const isOkOne = isElementClickedOne.some(
+//   (element) => element === elementClicked
+// );
+// const isOkTwo = isElementClickedTwo.some(
+//   (element) => element === elementClicked
+// );
+// if (isOkOne) {
+//   effectTransition(models02, "-16%");
+//   return;
+// }
+// if (isOkTwo) {
+//   effectTransition(models01, "3%");
+// }
 // delegation para deslocamentos de cards models
 
 // evento para lidar com abertura de texto de cards models
@@ -123,15 +144,15 @@ containerModels.addEventListener("click", (event) => {
 //   });
 // });
 
-
 const buttonInfo = document.querySelectorAll(".button-info");
 const extractButton = Array.from(buttonInfo);
 const buttonFirstCard = buttonInfo[0];
 const buttonsecondCard = buttonInfo[1];
 const clouseInformation = document.querySelector(".fechar");
 const containerModel = document.querySelector(".container-models");
-const textModels = document.querySelectorAll(".container-models .information .description p");
-
+const textModels = document.querySelectorAll(
+  ".container-models .information .description p"
+);
 
 // const showDesciption = (showtext, hiddenText, index) =>{
 //   containerModel.classList.toggle("active");
@@ -148,7 +169,6 @@ const textModels = document.querySelectorAll(".container-models .information .de
 //   textModels[index].style.whiteSpace = "nowrap";
 // }
 
-
 // buttonInfo[0].addEventListener('click', () =>{
 //   containerModel.classList.toggle("active");
 //   const isActiveClass = containerModel.classList.contains("active")
@@ -161,8 +181,7 @@ const textModels = document.querySelectorAll(".container-models .information .de
 //       buttonFirstCard.textContent = "LER MAIS"
 //       textModels[0].style.maxWidth = "25ch";
 //       textModels[0].style.whiteSpace = "nowrap";
-   
-  
+
 // })
 
 // buttonsecondCard.addEventListener("click", () => {

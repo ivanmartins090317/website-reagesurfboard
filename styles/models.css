@@ -3,21 +3,23 @@
   display: flex;
   gap: 5px;
   align-items: center;
-  width: 420%;
   margin:5% 1% 5%;
   position: relative;
-  overflow: auto;
-  display: flex;
-  scroll-snap-type: x mandatory;
+  /* width:500%; */
 }
 
 .items{
   display:flex;
   gap:20px;
-  animation: scrollItens 50s linear infinite;
-  overflow-x:hidden;
+  /* animation: scrollItens 50s linear infinite; */
+  overflow-x:auto;
+  overflow-y:hidden;
   padding:0 20px;
-  width: 335%
+  width: 535%;
+  scroll-behavior:smooth;
+}
+.item::-webkit-scrollbar{
+  width:0;
 }
 .items:hover{
   animation-play-state: paused;
@@ -39,7 +41,7 @@
   margin: 0px auto;
 }
 .container-models .surfboard-reage img {
-  width: ;
+  /* width: ; */
   height: 300px;
   margin-top: 20px;
   z-index: 2;
@@ -47,8 +49,9 @@
 }
 
 .container-models {
-  width: 390px;
-  min-width:370px;
+  min-width:21.81rem;
+  max-width: 85%;
+  /* max-width:1370px; */
   height:auto;
   display: flex;
   flex-direction: column;
@@ -57,9 +60,9 @@
   margin: 10px 0 50px ;
   position: relative;
   background-color: #FFFBFF;
-  overflow:hidden;
+  /* overflow:hidden; */
   
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
 }
 
 .container-models .container-logo-surfboard {
@@ -72,41 +75,7 @@
   margin: 20px auto;
   margin-top: 20px;
 }
-/* .next {
-  position: absolute;
-  top: 35%;
-  right: 0;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.5;
-  margin-right: 25px;
-}
-.next img {
-  width: 18px;
-  height: 18px;
-}
-.previos img {
-  width: 18px;
-  height: 18px;
-}
-.previos {
-  transform: rotate(180deg);
-  position: absolute;
-  top: 35%;
-  left: 0;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.5;
-  margin-left: 25px;
-}
-.arrow {
-  opacity: 0.5;
-  font-weight: 700;
-} */
+
 .container-models .information {
   display: flex;
   flex-direction: column;
@@ -115,8 +84,11 @@
   margin-top: 3px;
   text-align: center;
   width: 100%;
-  height:320px;
+  height:auto;
   margin-bottom: 5px;
+}
+.arrow{
+  color: var(--color-icons);
 }
 .container-models .information h3 {
   font-size: 25px;
@@ -125,13 +97,12 @@
   margin-bottom: 25px;
 }
 .container-models .information > .description {
-  height: 500px;
+  height: auto;
   display: block;
   font-size: 16px;
   color: #7c7474;
   font-weight: 700;
   margin: 50px auto;
-
 }
 .container-models .information .description p {
   padding: 0 15px;
